@@ -1,15 +1,96 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
-  <title id="title">Community Apps starter icon</title>
-  <desc id="desc">Replace this placeholder icon before publishing your repository.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">HackerHog</title>
+  <desc id="desc">A friendly hedgehog hacker in a dark hoodie using a laptop, with copper circuit-patterned spines and teal highlights.</desc>
   <defs>
-    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
-      <stop offset="0%" stop-color="#0f172a" />
-      <stop offset="100%" stop-color="#2563eb" />
+    <linearGradient id="bg" x1="80" y1="52" x2="426" y2="462" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#182631"/>
+      <stop offset="1" stop-color="#070d12"/>
     </linearGradient>
+    <linearGradient id="spines" x1="91" y1="79" x2="358" y2="347" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#723717"/>
+      <stop offset="1" stop-color="#2d140d"/>
+    </linearGradient>
+    <linearGradient id="fur" x1="194" y1="159" x2="339" y2="331" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffd28a"/>
+      <stop offset="1" stop-color="#e97832"/>
+    </linearGradient>
+    <linearGradient id="hoodie" x1="158" y1="300" x2="326" y2="448" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#263746"/>
+      <stop offset="1" stop-color="#0b1118"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="327" y1="312" x2="425" y2="448" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1a2731"/>
+      <stop offset="1" stop-color="#090e13"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000" flood-opacity=".45"/>
+    </filter>
+    <clipPath id="badgeClip"><circle cx="256" cy="256" r="226"/></clipPath>
   </defs>
-  <rect width="256" height="256" rx="48" fill="url(#bg)" />
-  <path d="M56 84c0-15.464 12.536-28 28-28h88c15.464 0 28 12.536 28 28v88c0 15.464-12.536 28-28 28H84c-15.464 0-28-12.536-28-28z" fill="none" stroke="#bfdbfe" stroke-width="12" />
-  <path d="M96 128h64" stroke="#e0f2fe" stroke-linecap="round" stroke-width="14" />
-  <path d="M128 96v64" stroke="#e0f2fe" stroke-linecap="round" stroke-width="14" />
-  <text x="128" y="228" fill="#dbeafe" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle">REPLACE ME</text>
+
+  <g filter="url(#shadow)">
+    <circle cx="256" cy="256" r="232" fill="#05090d"/>
+    <circle cx="256" cy="256" r="224" fill="url(#bg)" stroke="#11dce5" stroke-width="9"/>
+  </g>
+
+  <g clip-path="url(#badgeClip)">
+    <!-- Copper hedgehog silhouette -->
+    <path d="M82 305 48 273l54-15-40-43 67-2-29-55 67 15-10-70 57 39 17-78 43 62 43-72 20 78 61-44-9 73 72-20-33 62 72 3-50 48 57 25-66 31 42 51-76 7 20 63-74-19-4 47-202-8-34-94 35-26-48-42z" fill="url(#spines)" stroke="#05090d" stroke-width="10" stroke-linejoin="round"/>
+
+    <!-- Circuit traces on spines -->
+    <g fill="none" stroke="#ff962f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M112 225h37l21 22h38"/><path d="M137 160h38l26 28v31"/>
+      <path d="M211 116v42l27 27"/><path d="M282 109v48l28 29v33"/>
+      <path d="M348 131v42l33 23"/><path d="M102 296h38l21-20"/>
+    </g>
+    <g fill="#ff9b32" stroke="#35170d" stroke-width="5">
+      <circle cx="112" cy="225" r="10"/><circle cx="137" cy="160" r="10"/>
+      <circle cx="211" cy="116" r="10"/><circle cx="282" cy="109" r="10"/>
+      <circle cx="348" cy="131" r="10"/><circle cx="102" cy="296" r="10"/>
+    </g>
+
+    <!-- Ears -->
+    <path d="M167 176c-27-39-12-74 21-66 28 7 36 42 21 69z" fill="#f59a52" stroke="#0a0e12" stroke-width="10"/>
+    <path d="M181 162c-11-20-4-37 11-32 12 5 16 20 10 36z" fill="#a9482c"/>
+    <path d="M326 177c16-45 54-54 66-22 11 28-17 51-49 48z" fill="#f59a52" stroke="#0a0e12" stroke-width="10"/>
+    <path d="M348 182c8-23 25-31 31-16 5 13-8 24-27 26z" fill="#a9482c"/>
+
+    <!-- Face -->
+    <path d="M178 209c20-70 122-91 170-31 38 47 13 123-55 151-59 24-132-10-139-65-3-22 7-42 24-55z" fill="url(#fur)" stroke="#090d11" stroke-width="10"/>
+    <path d="M179 205c18-34 49-55 83-58-7 13-17 27-31 37 24-5 43-1 57 7-36 2-56 13-72 32z" fill="#ffbd69"/>
+
+    <!-- Eyes -->
+    <path d="M188 229c15-23 45-25 61-1-10 29-47 32-61 1z" fill="#fff" stroke="#090d11" stroke-width="8"/>
+    <ellipse cx="220" cy="231" rx="12" ry="18" fill="#151417"/><circle cx="224" cy="224" r="4" fill="#fff"/>
+    <path d="M277 225c17-24 47-20 58 5-14 27-51 26-58-5z" fill="#fff" stroke="#090d11" stroke-width="8"/>
+    <ellipse cx="302" cy="229" rx="12" ry="18" fill="#151417"/><circle cx="306" cy="222" r="4" fill="#fff"/>
+    <path d="M186 207c17-12 39-12 56 0M282 203c18-9 36-5 48 7" fill="none" stroke="#090d11" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Nose and smile -->
+    <path d="M250 260c11-12 30-11 39 1-2 14-12 20-20 20-10 0-18-7-19-21z" fill="#11151a" stroke="#06090c" stroke-width="6"/>
+    <ellipse cx="266" cy="260" rx="8" ry="4" fill="#7c8790" opacity=".65"/>
+    <path d="M269 278c-2 19-25 26-39 12m39-12c4 18 25 22 36 10" fill="none" stroke="#17100d" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Hoodie/body -->
+    <path d="M126 449c3-76 13-126 64-151 22 27 103 42 142-2 44 22 65 83 64 153z" fill="url(#hoodie)" stroke="#080d12" stroke-width="11"/>
+    <path d="M185 300c20 37 103 55 150-2l-27 66-48-24-47 25z" fill="#101923" stroke="#060a0e" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M214 337v48M306 337v47" stroke="#aab2b8" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="260" cy="370" r="29" fill="#101a22" stroke="#11dce5" stroke-width="6"/>
+    <path d="m246 356 14 14-14 14m21 0h12" fill="none" stroke="#11dce5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Arm and paw -->
+    <path d="M142 412c18-35 56-40 91-17l40 25-28 36-58-9-52-5z" fill="#172430" stroke="#080d12" stroke-width="10"/>
+    <path d="M230 411c23-10 55 5 61 26 4 15-12 25-30 21l-42-12c-12-7-4-28 11-35z" fill="#ee8b45" stroke="#090d11" stroke-width="8"/>
+    <path d="M245 421c9 3 15 9 18 18m-1-20c10 4 16 10 18 18" fill="none" stroke="#9d4528" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Laptop -->
+    <path d="M285 438 326 309c2-8 8-13 17-13h143c10 0 15 8 12 17l-39 125z" fill="url(#screen)" stroke="#05090d" stroke-width="11" stroke-linejoin="round"/>
+    <path d="M290 431 329 312c1-4 5-7 10-7h150" fill="none" stroke="#11dce5" stroke-width="7" stroke-linecap="round"/>
+    <path d="M204 451h253l-17 24H183c-10 0-11-11-2-15z" fill="#131e27" stroke="#05090d" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M210 452h77" stroke="#11dce5" stroke-width="6" stroke-linecap="round"/>
+    <!-- Original acorn mark -->
+    <path d="M394 358c14-16 35-6 32 12-2 15-14 27-28 34-9-12-16-32-4-46z" fill="#11dce5"/>
+    <path d="M389 363c10 4 23 5 36 1" fill="none" stroke="#071016" stroke-width="5" stroke-linecap="round"/>
+    <path d="M408 353c-2-8 2-13 8-17" fill="none" stroke="#11dce5" stroke-width="6" stroke-linecap="round"/>
+  </g>
 </svg>
