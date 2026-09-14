@@ -19,6 +19,7 @@
   <DateInstalled/>
   <Requires/>
   <License>GPL-3.0-or-later</License>
+  <MinVer>6.12.0</MinVer>
   <Config Name="WebUI Port" Target="8000" Default="8091" Mode="tcp" Description="Port for the Docker Safeguard web interface" Type="Port" Display="always" Required="true" Mask="false">8091</Config>
   <Config Name="Docker Socket" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="Needed to inspect, create, and start containers" Type="Path" Display="always" Required="true" Mask="false">/var/run/docker.sock</Config>
   <Config Name="User Shares" Target="/mnt/user" Default="/mnt/user" Mode="rw" Description="Read appdata and write backups to any share" Type="Path" Display="always" Required="true" Mask="false">/mnt/user</Config>

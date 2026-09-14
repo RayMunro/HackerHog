@@ -10,6 +10,7 @@
   <!-- The .plg file already sets the support attribute, so <Support> here is ignored, left out to avoid duplication -->
   <Project>https://github.com/RayMunro/unraid-share-name-normalizer</Project>
   <ReadMe>https://raw.githubusercontent.com/RayMunro/unraid-share-name-normalizer/main/README.md</ReadMe>
+  <Icon>https://raw.githubusercontent.com/RayMunro/unraid-share-name-normalizer/main/icon.svg</Icon>
   <Category>Tools:</Category>
   <MinVer>6.12.0</MinVer>
   <License>GPL-3.0-or-later</License>

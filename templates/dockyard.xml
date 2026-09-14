@@ -23,6 +23,7 @@
   <DonateLink/>
   <Requires/>
   <License>GPL-3.0-or-later</License>
+  <MinVer>6.12.0</MinVer>
   <Date>2026-09-14</Date>
   <Changes>
     ### 2026-09-14
