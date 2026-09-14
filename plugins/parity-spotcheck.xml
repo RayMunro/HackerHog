@@ -12,6 +12,6 @@
   <ReadMe>https://raw.githubusercontent.com/RayMunro/unraid-parity-spotcheck/main/README.md</ReadMe>
   <Category>Tools:</Category>
   <MinVer>6.12.0</MinVer>
-  <IconFA>crosshairs</IconFA>
+  <Icon>https://raw.githubusercontent.com/RayMunro/unraid-parity-spotcheck/main/icon.svg</Icon>
   <License>GPL-3.0-or-later</License>
 </Plugin>

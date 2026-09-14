@@ -12,6 +12,6 @@
   <ReadMe>https://raw.githubusercontent.com/RayMunro/unraid-mains-power-monitor/main/README.md</ReadMe>
   <Category>Tools:</Category>
   <MinVer>6.12.0</MinVer>
-  <IconFA>bolt</IconFA>
+  <Icon>https://raw.githubusercontent.com/RayMunro/unraid-mains-power-monitor/main/icon.svg</Icon>
   <License>GPL-3.0-or-later</License>
 </Plugin>

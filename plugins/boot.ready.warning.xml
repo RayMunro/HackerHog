@@ -12,6 +12,6 @@
   <ReadMe>https://raw.githubusercontent.com/RayMunro/unraid-boot-ready-notify/main/README.md</ReadMe>
   <Category>Tools:</Category>
   <MinVer>6.12.0</MinVer>
-  <IconFA>bell</IconFA>
+  <Icon>https://raw.githubusercontent.com/RayMunro/unraid-boot-ready-notify/main/usr/local/emhttp/plugins/boot.ready.warning/images/boot.ready.warning.png</Icon>
   <License>GPL-3.0-or-later</License>
 </Plugin>

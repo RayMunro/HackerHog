@@ -12,6 +12,6 @@
   <ReadMe>https://raw.githubusercontent.com/RayMunro/unraid-bulk-share-toggle/main/README.md</ReadMe>
   <Category>Plugins: Tools:</Category>
   <MinVer>6.9.0</MinVer>
-  <IconFA>check-square-o</IconFA>
+  <Icon>https://raw.githubusercontent.com/RayMunro/unraid-bulk-share-toggle/main/icon.svg</Icon>
   <License>GPL-3.0-or-later</License>
 </Plugin>
