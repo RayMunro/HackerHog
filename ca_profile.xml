@@ -1,12 +1,14 @@
 <CommunityApplications>
   <!-- Required profile -->
   <Profile>
-    Describe what users will find in this repository, which apps or plugins you maintain, and where they should go for support.  Markdown supported
+    Here you will find my selection of Unraid Docker apps as well as Unraid Plugins that I've made useually because at some point
+    I've needed the funcionality and figured others may find them usefull too, I hope they are of some use to you and I will add more as
+    I find things that I need that are not yet availible or if I don't like the ones that are.
   </Profile>
   <!-- Optional icon -->
-  <Icon>https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/icon.svg</Icon>
+  <Icon>https://raw.githubusercontent.com/RayMunro/HackerHog/main/icon.svg</Icon>
   <!-- Optional web page -->
-  <WebPage>https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME</WebPage>
+  <WebPage>https://github.com/RayMunro/HackerHog</WebPage>
   <!-- Optional support and donation links -->
   <Forum>https://forums.unraid.net/topic/YOUR_SUPPORT_TOPIC</Forum>
   <!-- Optional Discord link -->
