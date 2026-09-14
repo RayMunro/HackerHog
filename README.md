@@ -1,32 +1,36 @@
-# Community Apps Starter Template
+# HackerHog
 
-Use this repository as a GitHub template when you want a clean starting point for a new Community Apps submission repository.
+Ray Munro's Community Applications feed for Unraid: a collection of Docker apps and plugins, each maintained in its own repository. This repo holds only the Community Applications metadata (`ca_profile.xml`, `templates/*.xml`, `plugins/*.xml`) that Unraid's Community Applications plugin reads to list them - the source code, `.plg` files, and Dockerfiles for each app live in their own linked repository.
 
-## Quick Start
+## Docker apps (`templates/`)
 
-1. Click **Use this template** on GitHub and create your own repository.
-2. Replace the placeholder values in `ca_profile.xml`, `templates/example-app.xml`, and `plugins/example-plugin.xml`.
-3. Replace `icon.svg` with your own repository icon, or update `ca_profile.xml` to point at a hosted icon you control.
-4. Keep one XML file per Docker app under `templates/`.
-5. Keep one XML wrapper per plugin under `plugins/`.
-6. Delete the example files you do not need.
-7. Commit and push your repository.
-8. Run **Validate** and **Scan** in the Community Apps submit flow: `/submit`.
+| App | Template | Source |
+| --- | --- | --- |
+| Dockyard | [`templates/dockyard.xml`](templates/dockyard.xml) | [RayMunro/dockyard](https://github.com/RayMunro/dockyard) |
+| Docker Safeguard | [`templates/docker-safeguard.xml`](templates/docker-safeguard.xml) | [RayMunro/docker-safeguard](https://github.com/RayMunro/docker-safeguard) |
 
-## Starter Files
+## Plugins (`plugins/`)
 
-- `README.md`: onboarding notes for whoever maintains the repository.
-- `LICENSE`: starter MIT license text. Replace the placeholder copyright line.
-- `.gitignore`: keeps common OS junk out of the repo.
-- `icon.svg`: starter repository icon referenced by `ca_profile.xml`.
-- `ca_profile.xml`: repository overview and support metadata shown in Community Apps.
-- `templates/example-app.xml`: starter Docker application template.
-- `plugins/example-plugin.xml`: starter plugin wrapper.
+| Plugin | Entry | Source |
+| --- | --- | --- |
+| Share Name Normalizer | [`plugins/share-name-normalizer.xml`](plugins/share-name-normalizer.xml) | [RayMunro/unraid-share-name-normalizer](https://github.com/RayMunro/unraid-share-name-normalizer) |
+| Bulk Share Toggle | [`plugins/bulk-share-toggle.xml`](plugins/bulk-share-toggle.xml) | [RayMunro/unraid-bulk-share-toggle](https://github.com/RayMunro/unraid-bulk-share-toggle) |
+| SMB Bulk Share Control | [`plugins/smb-bulk-share.xml`](plugins/smb-bulk-share.xml) | [RayMunro/unraid-smb-bulk-share](https://github.com/RayMunro/unraid-smb-bulk-share) |
+| Parity Spot Check | [`plugins/parity-spotcheck.xml`](plugins/parity-spotcheck.xml) | [RayMunro/unraid-parity-spotcheck](https://github.com/RayMunro/unraid-parity-spotcheck) |
+| Boot Ready Notify | [`plugins/boot.ready.warning.xml`](plugins/boot.ready.warning.xml) | [RayMunro/unraid-boot-ready-notify](https://github.com/RayMunro/unraid-boot-ready-notify) |
+| Mains Power Monitor | [`plugins/mains-power-monitor.xml`](plugins/mains-power-monitor.xml) | [RayMunro/unraid-mains-power-monitor](https://github.com/RayMunro/unraid-mains-power-monitor) |
+| Cache / Array Share Control | [`plugins/cache-array-share.xml`](plugins/cache-array-share.xml) | [RayMunro/unraid-cache-array-share](https://github.com/RayMunro/unraid-cache-array-share) |
 
-## Submission Notes
+## Adding a new app or plugin
 
-- Keep `ca_profile.xml` in the repository root.
-- Every Docker app entry needs a `<Repository>` tag.
-- Every plugin entry needs a `<PluginURL>` tag.
-- Keep each template's `TemplateURL` pointed at the raw GitHub URL for that exact XML file.
-- Use an OSI-approved license before submitting.
+1. Build and publish the app/plugin as usual in its own repository.
+2. Add a `<Repository>`/`<Container>` XML template (Docker apps) under `templates/`, or a `<Plugin>` wrapper under `plugins/`, following the existing files as a pattern.
+3. Point `TemplateURL`/`PluginURL`, `Project`, `ReadMe`, and `Icon` at the raw GitHub URLs of the source repo (except `TemplateURL`, which points back at this repo).
+4. Commit and push, then run **Validate** and **Scan** in the Community Applications submit flow.
+
+## Files
+
+- `ca_profile.xml`: repository overview and support metadata shown in Community Applications.
+- `icon.svg`: repository icon referenced by `ca_profile.xml`.
+- `templates/`: one Docker app template per file.
+- `plugins/`: one plugin wrapper per file.
