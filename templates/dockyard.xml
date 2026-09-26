@@ -25,15 +25,6 @@
   <License>GPL-3.0-or-later</License>
   <MinVer>6.12.0</MinVer>
   <Date>2026-09-14</Date>
-  <Changes>
-    ### 2026-09-14
-    - Groups: assign apps to named sections (Media, Admin, etc.), with drag-and-drop between groups in Edit Layout
-    - Search: filter tiles by name from the top bar, or press / to jump to it
-    - Status dots: each tile shows reachability at a glance - a live HTTP check, or actual container running/stopped state for apps linked via the Docker picker
-
-    ### 2026-09-05
-    Initial release
-  </Changes>
   <Config Name="WebUI Port" Target="3000" Default="8090" Mode="tcp" Description="Port to reach the Dockyard web interface on" Type="Port" Display="always" Required="true" Mask="false">8090</Config>
   <Config Name="Data" Target="/data" Default="/mnt/user/appdata/dockyard" Mode="rw" Description="Persistent storage for your app list, icons, background image, and password" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/dockyard</Config>
   <Config Name="Edit Password" Target="EDIT_PASSWORD" Default="" Mode="" Description="Optional: sets an initial password required before any changes can be made (you'll be forced to change it on first use). Leave blank for open editing." Type="Variable" Display="always" Required="false" Mask="true"></Config>
