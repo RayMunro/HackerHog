@@ -1,7 +1,7 @@
 <CommunityApplications>
   <!-- Required profile -->
   <Profile>
-HackerHog is Ray Munro's collection of Unraid Docker apps and plugins. Each one was built to scratch a real itch on my own server - bulk share management, boot/power notifications, parity spot-checking, a tile dashboard, and Docker app backup/restore - and I'm sharing them here in case they're useful to you too. More will be added as I build them.
+HackerHog is Ray Munro's collection of Unraid Docker apps and plugins. Each one was built to scratch a real itch on my own server - bulk share management, boot/power notifications, parity spot-checking, a tile dashboard, Docker app backup/restore, and finding missing episodes and movies in a Plex library - and I'm sharing them here in case they're useful to you too. More will be added as I build them.
 
 Support and bug reports: use each app's own GitHub Issues page, linked from its entry below.
   </Profile>

@@ -8,6 +8,7 @@ Ray Munro's Community Applications feed for Unraid: a collection of Docker apps 
 | --- | --- | --- | --- |
 | <img src="https://raw.githubusercontent.com/RayMunro/dockyard/main/public/icon.png" width="32"> | Dockyard | [`templates/dockyard.xml`](templates/dockyard.xml) | [RayMunro/dockyard](https://github.com/RayMunro/dockyard) |
 | <img src="https://raw.githubusercontent.com/RayMunro/docker-safeguard/main/app/static/icon.png" width="32"> | Docker Safeguard | [`templates/docker-safeguard.xml`](templates/docker-safeguard.xml) | [RayMunro/docker-safeguard](https://github.com/RayMunro/docker-safeguard) |
+| <img src="https://raw.githubusercontent.com/RayMunro/plexgaps/main/icon.png" width="32"> | PlexGaps | [`templates/plexgaps.xml`](templates/plexgaps.xml) | [RayMunro/plexgaps](https://github.com/RayMunro/plexgaps) |
 
 ## Plugins (`plugins/`)
 
